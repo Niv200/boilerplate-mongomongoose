@@ -3,7 +3,7 @@ const { Mongoose } = require('mongoose');
 require('dotenv').config({path:'MONGO_URI.env'});
 console.log(process.env.MONGO_URI);
 const mongoose = require("mongoose");
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://niv-database01:nivsdata@cluster0.cdi79.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
 
 let Person;
 
